@@ -2,6 +2,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root{
@@ -10,5 +12,72 @@
     --Grayish-purple: hsl(292, 16%, 49%);
     --Dark-purple: hsl(292, 42%, 14%);
     --Work-sans: "Work Sans", sans-serif;
+}
+
+body{
+    background-color: var(--Light-pink);
+    font-family: var(--Work-sans);
+}
+
+.header_bg{
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    height: 320px;
+}
+
+button{
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--Light-pink);
+}
+
+.icon-star{
+    width: 40px;
+    height: 40px;
+}
+
+.accordion{
+    height: 100vh;
+    background-color: var(--White);
+    width: 37.5rem;
+    height: 34.5rem;
+    margin: 0 auto;
+    position: relative;
+    top: -5.5rem;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+}
+
+.accordion-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-icon{
+    position: relative;
+    left: 3rem;
+    top: 0.5rem;
+}
+
+.accordion-questions{
+   
+}
+
+.accordion__description{
+   padding-top: 1rem;
+    /* visibility: hidden; */
+}
+
+.accordion-content span{
+    color: var(--Dark-purple);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.accordion__description p{
+    color: var(--Grayish-purple);
+    line-height: 1.2rem;
+    width: 30rem;
 }
 
