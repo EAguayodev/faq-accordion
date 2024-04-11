@@ -134,4 +134,8 @@ hr{
     .question{
         width: 14rem;
     }
+
+    .accordion__description{
+        width: 20rem;
+    }
 }
