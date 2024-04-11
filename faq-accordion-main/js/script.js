@@ -1,4 +1,7 @@
-const accordionContent = document.querySelectorAll('accordion-questions');
-const accordionDescription = document.querySelectorAll('accordion__description');
+const accordion = document.getElementsByClassName('accordion-questions');
 
-// item.classList.toggle(button);
+for (i = 0; i < accordion.length; i++) {
+   accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+   });
+}
