@@ -105,7 +105,7 @@ hr{
     color: var(--Grayish-purple);
 }
 
-.accordion__description p{
+.accordion__description {
     color: var(--Grayish-purple);
     line-height: 1.2rem;
     font-size: 1rem;
