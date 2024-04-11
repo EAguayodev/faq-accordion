@@ -3,9 +3,7 @@
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+- [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,9 +13,6 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
 
 ### The challenge
 
@@ -28,50 +23,62 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github]()
+- Live Site URL: [Vercel](https://faq-accordion-umber-beta.vercel.app/)
 
 ## My process
 
+### Step 1: Structuring the HTML
+I started by outlining the basic structure of the accordion in HTML. Each FAQ entry consists of a button that users can click to toggle the visibility of the answer, which is contained within a div just below the button. I ensured that each button and div pairing was properly structured for accessibility.
+
+### Step 2: Styling with CSS
+Next, I added styles to make the accordion visually appealing and intuitive to use. I styled the buttons to change slightly on hover to indicate that they are interactive. I also used CSS to initially hide the content and then to smoothly transition it into view when the corresponding button is clicked.
+
+### Step 3: Adding Interactivity with JavaScript
+I wrote a simple JavaScript script to add the dynamic functionality to the accordion. The script listens for clicks on each button, then toggles the visibility of the content area directly following it. I implemented this in a way that each button works independently of the others, allowing multiple sections to be open at the same time.
+
+
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- HTML5
+- CSS3
+- Javascript
+- Desktop-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <div class="accordion-questions">
+          <div class="question">
+            <p>What is Frontend Mentor, and how will it help me? </p>
+          </div>
+          <div class="accordion__description">
+              Frontend Mentor offers realistic coding challenges to help developers improve their
+              frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+              all levels and ideal for portfolio building.
+          </div>
+          <hr>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.accordion-content .accordion-questions::before{
+    content: '+';
+    color: var(--White);
+    background-color: blueviolet;
+    position: relative;
+    border-radius: 50%;
+    padding: 11px;
+    top: 1rem;
+    left: 30rem;
+    font-size: 16px;
+    transform: translateY(-50%);
 }
 ```
 ```js
@@ -80,31 +87,23 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For continued development moving forward, I will be spending time learning and building more projects involving Javascript concepts from for loops, form validation, and using javascript for hamburger menu opnenings and closing.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Google](https://www.google.com) - Typed in a random search on a topic, and common questions diaplyed showed me how to build the structure of the html content fo the accordion.
+- [freecodecamp](https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/) - This is an amazing article which helped me finally understand how to style the accordions opening tabs for css and javascript. Definitely a simplified down way of understanding how to use javascript for accorion functionality.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Eric Aguayo](https://www.ericaguayo.com)
+- Frontend Mentor - [@EAguayodev](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@eric_emaildev](https://www.twitter.com/eric_emaildev)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Give hat out to the freecodecamp writer of the accordion article Kingsley Ubah for breaking down and how to build an accordion with html, css, and javascript.

@@ -92,8 +92,6 @@ hr{
    transition: 0.5s;
 }
 
-
-
 .question{
     color: var(--Dark-purple);
     font-weight: bold;
@@ -125,8 +123,11 @@ hr{
         width: 23.5rem;
     }
 
-    .img-icon{
+    .accordion-questions::before{
+        content: '+';
+        top: 1rem;
+        right: 11rem;
+        font-size: 16px;
         position: relative;
-        left: 18rem;
     }
 }
