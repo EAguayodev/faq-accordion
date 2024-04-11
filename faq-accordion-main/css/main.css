@@ -123,11 +123,15 @@ hr{
         width: 23.5rem;
     }
 
-    .accordion-questions::before{
+    .accordion-content .accordion-questions::before{
         content: '+';
         top: 1rem;
-        right: 11rem;
+        left: 18rem;
         font-size: 16px;
         position: relative;
+    }
+
+    .question{
+        width: 14rem;
     }
 }
