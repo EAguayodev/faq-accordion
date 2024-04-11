@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github]()
+- Solution URL: [Github](https://github.com/EAguayodev/faq-accordion)
 - Live Site URL: [Vercel](https://faq-accordion-umber-beta.vercel.app/)
 
 ## My process
