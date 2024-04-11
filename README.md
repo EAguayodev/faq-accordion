@@ -101,7 +101,7 @@ For continued development moving forward, I will be spending time learning and b
 ## Author
 
 - Website - [Eric Aguayo](https://www.ericaguayo.com)
-- Frontend Mentor - [@EAguayodev](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@EAguayodev](https://www.frontendmentor.io/profile/EAguayodev)
 - Twitter - [@eric_emaildev](https://www.twitter.com/eric_emaildev)
 
 ## Acknowledgments
