@@ -82,8 +82,13 @@ To see how you can add code snippets, see below:
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const accordion = document.getElementsByClassName('accordion-questions');
+
+for (i = 0; i < accordion.length; i++) {
+   accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+   });
+}
 }
 ```
 
