@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -58,7 +56,7 @@ body {
     padding: 11px;
     top: 1rem;
     left: 30rem;
-    font-size: 16px;
+    font-size: 1rem;
     transform: translateY(-50%);
 }
 
@@ -69,7 +67,7 @@ body {
 
 .accordion-content .accordion-questions.active::before {
     content: '-';
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .accordion-content h1 {
@@ -128,7 +126,7 @@ hr {
         content: '+';
         top: 1rem;
         left: 18rem;
-        font-size: 16px;
+        font-size: 1rem;
         position: relative;
     }
 
